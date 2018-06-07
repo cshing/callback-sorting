@@ -15,13 +15,7 @@ var students = [
     { id: 4, name: "alex",     age: 30 }
   ];
 
-
-
-students.sort(function(a, b) {
-    return b.age - a.age;
-});
-
-students.sort(function(a, b) {
+  students.sort(function(a, b) {
     var nameA = a.name;
     var nameB = b.name;
     if (nameA < nameB) {
@@ -30,12 +24,27 @@ students.sort(function(a, b) {
     if (nameA > nameB) {
         return 1;
     }
-    return 0
+    return b.age - a.age
 });
 
 console.log(students)
 
 
+// students.sort(function(a, b) {
+//     return b.age - a.age;
+// });
+
+// students.sort(function(a, b) {
+//     var nameA = a.name;
+//     var nameB = b.name;
+//     if (nameA < nameB) {
+//         return -1;
+//     }
+//     if (nameA > nameB) {
+//         return 1;
+//     }
+//     return 0
+// });
 
 
 
