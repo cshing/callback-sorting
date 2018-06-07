@@ -16,12 +16,10 @@ var students = [
   ];
 
   students.sort(function(a, b) {
-    var nameA = a.name;
-    var nameB = b.name;
-    if (nameA < nameB) {
+    if (a.name < b.name) {
         return -1;
     }
-    if (nameA > nameB) {
+    if (a.name > b.name) {
         return 1;
     }
     return b.age - a.age
